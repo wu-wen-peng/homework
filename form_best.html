@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>表单的更多标签功能</title>
+	</head>
+	<!-- 引申 -->
+	<body>
+		<form>
+			你喜欢的城市<input type="text" list="aa" />
+			<datalist id="aa">
+				<option>上海</option>
+				<option>上海最近发展</option>
+				<option>上海浦东最新建设</option>
+				<option>上海各大景区</option>
+				<option>上海路线</option>
+			</datalist>
+			<p>
+			你喜欢的颜色<input type="color" />
+			</p>
+			<p>
+				你的生日<input type="date" />
+			</p>
+			<p>
+				报名日期<input type="date" max="2019.10.31"  min="2019.10.20"/>
+			</p>
+			<p>
+				输入邮箱<input type="email" />
+			</p>
+			<p>
+				输入分数<input  type="number" min="60" max="100" />
+			</p>
+			
+			<p>
+				<input type="submit" />
+			</p>
+						<p>
+				<label for="name">输入姓名</label>
+				<!--required表示必须要填-->
+				<input id="name" type="text" required="required" />
+			</p>
+			<p>
+				<input type="text" value="王小明" readonly="readonly"  />
+			</p>
+			<!--diabled灰色使无效-->
+			<p>
+				<input type="text" value="王小明" readonly="readonly" disabled="disabled"  />
+			</p>
+			<p>
+				<input type="submit" />
+			</p>
+			<!--size使输入框变长-->
+			<p>
+				<input type="text"  size="50" maxlength="5"  />
+			</p>
+		</form>
+	</body>
+</html>
